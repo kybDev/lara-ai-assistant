@@ -1,9 +1,9 @@
 <?php
 
-namespace Vendor\LaravelAiAssistant;
+namespace KyBDev\LaraAiAssistant;
 
 use Illuminate\Support\ServiceProvider;
-use Vendor\LaravelAiAssistant\Discovery\ModelScanner;
+use KyBDev\LaraAiAssistant\Discovery\ModelScanner;
 
 class AiAssistantServiceProvider extends ServiceProvider
 {

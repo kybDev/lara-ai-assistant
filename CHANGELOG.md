@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Replace placeholder package namespaces with `KyBDev\LaraAiAssistant`.
+- Document Composer installation for published and local path-repository use.
+
 ## 0.1.0
 
 - Initial package scaffold.

@@ -1,12 +1,12 @@
 <?php
 
-namespace Vendor\LaravelAiAssistant\Tests\Unit;
+namespace KyBDev\LaraAiAssistant\Tests\Unit;
 
 use InvalidArgumentException;
+use KyBDev\LaraAiAssistant\Discovery\ModelScanner;
+use KyBDev\LaraAiAssistant\Tests\Fixtures\Models\Asset;
+use KyBDev\LaraAiAssistant\Tests\Fixtures\Models\ConstructorSensitiveAsset;
 use PHPUnit\Framework\TestCase;
-use Vendor\LaravelAiAssistant\Discovery\ModelScanner;
-use Vendor\LaravelAiAssistant\Tests\Fixtures\Models\Asset;
-use Vendor\LaravelAiAssistant\Tests\Fixtures\Models\ConstructorSensitiveAsset;
 
 class ModelScannerTest extends TestCase
 {
@@ -16,7 +16,7 @@ class ModelScannerTest extends TestCase
             basePath: dirname(__DIR__, 2),
             modelDirectories: [[
                 'path' => 'tests/Fixtures/Models',
-                'namespace' => 'Vendor\\LaravelAiAssistant\\Tests\\Fixtures\\Models',
+                'namespace' => 'KyBDev\\LaraAiAssistant\\Tests\\Fixtures\\Models',
             ]]
         );
 
@@ -43,7 +43,7 @@ class ModelScannerTest extends TestCase
             basePath: dirname(__DIR__, 2),
             modelDirectories: [[
                 'path' => 'tests/Fixtures/Models',
-                'namespace' => 'Vendor\\LaravelAiAssistant\\Tests\\Fixtures\\Models',
+                'namespace' => 'KyBDev\\LaraAiAssistant\\Tests\\Fixtures\\Models',
             ]],
             enabledModels: [Asset::class]
         );
@@ -56,7 +56,7 @@ class ModelScannerTest extends TestCase
             basePath: dirname(__DIR__, 2),
             modelDirectories: [[
                 'path' => 'tests/Fixtures/Models',
-                'namespace' => 'Vendor\\LaravelAiAssistant\\Tests\\Fixtures\\Models',
+                'namespace' => 'KyBDev\\LaraAiAssistant\\Tests\\Fixtures\\Models',
             ]],
             enabledModels: [Asset::class],
             excludedModels: [Asset::class]
@@ -74,7 +74,7 @@ class ModelScannerTest extends TestCase
             basePath: dirname(__DIR__, 2),
             modelDirectories: [[
                 'path' => 'missing-models',
-                'namespace' => 'Vendor\\LaravelAiAssistant\\Tests\\Fixtures\\Models',
+                'namespace' => 'KyBDev\\LaraAiAssistant\\Tests\\Fixtures\\Models',
             ]]
         );
 

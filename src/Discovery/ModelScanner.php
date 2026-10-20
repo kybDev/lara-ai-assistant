@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\LaravelAiAssistant\Discovery;
+namespace KyBDev\LaraAiAssistant\Discovery;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;

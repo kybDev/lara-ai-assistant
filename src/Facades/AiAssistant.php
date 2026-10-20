@@ -1,12 +1,12 @@
 <?php
 
-namespace Vendor\LaravelAiAssistant\Facades;
+namespace KyBDev\LaraAiAssistant\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Vendor\LaravelAiAssistant\Discovery\ModelScanner;
+use KyBDev\LaraAiAssistant\Discovery\ModelScanner;
 
 /**
- * @method static list<\Vendor\LaravelAiAssistant\Discovery\DiscoveredModel> discover()
+ * @method static list<\KyBDev\LaraAiAssistant\Discovery\DiscoveredModel> discover()
  */
 class AiAssistant extends Facade
 {

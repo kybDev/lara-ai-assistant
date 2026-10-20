@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\LaravelAiAssistant\Discovery;
+namespace KyBDev\LaraAiAssistant\Discovery;
 
 final readonly class DiscoveredModel
 {

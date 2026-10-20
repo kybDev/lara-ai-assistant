@@ -11,9 +11,33 @@ does not query records, call an AI provider, or expose MCP tools.
 
 ## Installation
 
-Install the package with Composer. For local development from the host
-application, add a path repository pointing to this package directory and
-require `vendor/laravel-ai-assistant`.
+Install the package with Composer:
+
+```bash
+composer require kybdev/lara-ai-assistant
+```
+
+For local development from a host application in a sibling directory, add this
+repository to the host application's `composer.json`:
+
+```json
+{
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../lara-ai-assistant",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "kybdev/lara-ai-assistant": "^0.1"
+    }
+}
+```
+
+Then run `composer update kybdev/lara-ai-assistant`.
 
 The service provider is registered through Laravel package auto-discovery.
 Publish the default configuration with:
@@ -34,13 +58,12 @@ always take precedence. This allowlist is groundwork for future retrieval; an
 enabled model is not currently read or exposed to a provider.
 
 ```php
-use Vendor\LaravelAiAssistant\Facades\AiAssistant;
+use KyBDev\LaraAiAssistant\Facades\AiAssistant;
 
 $catalog = AiAssistant::discover();
 ```
 
 Discovery does not run model constructors, query records, or invoke model
 relationship methods. This avoids accidental database access or application
-side effects while scanning. Relationship
-metadata, authorization-aware retrieval, provider integrations, and MCP tools
-are not implemented yet.
+side effects while scanning. Relationship metadata, authorization-aware
+retrieval, provider integrations, and MCP tools are not implemented yet.

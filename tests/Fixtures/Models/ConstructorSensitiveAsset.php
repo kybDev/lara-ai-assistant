@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\LaravelAiAssistant\Tests\Fixtures\Models;
+namespace KyBDev\LaraAiAssistant\Tests\Fixtures\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use RuntimeException;

@@ -3,7 +3,6 @@
     "description": "A reusable Laravel AI Assistant package for model discovery, authorized data retrieval, and safe AI tool integration.",
     "type": "library",
     "license": "MIT",
-    "version": "0.1.0",
     "keywords": [
         "laravel",
         "ai",
@@ -34,21 +33,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Vendor\\LaravelAiAssistant\\": "src/"
+            "KyBDev\\LaraAiAssistant\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vendor\\LaravelAiAssistant\\Tests\\": "tests/"
+            "KyBDev\\LaraAiAssistant\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Vendor\\LaravelAiAssistant\\AiAssistantServiceProvider"
+                "KyBDev\\LaraAiAssistant\\AiAssistantServiceProvider"
             ],
             "aliases": {
-                "AiAssistant": "Vendor\\LaravelAiAssistant\\Facades\\AiAssistant"
+                "AiAssistant": "KyBDev\\LaraAiAssistant\\Facades\\AiAssistant"
             }
         }
     },

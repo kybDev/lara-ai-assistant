@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\LaravelAiAssistant\Tests\Unit;
+namespace KyBDev\LaraAiAssistant\Tests\Unit;
 
+use KyBDev\LaraAiAssistant\AiAssistantServiceProvider;
+use KyBDev\LaraAiAssistant\Facades\AiAssistant;
+use KyBDev\LaraAiAssistant\Tests\Fixtures\Models\Asset;
 use Orchestra\Testbench\TestCase;
-use Vendor\LaravelAiAssistant\AiAssistantServiceProvider;
-use Vendor\LaravelAiAssistant\Facades\AiAssistant;
-use Vendor\LaravelAiAssistant\Tests\Fixtures\Models\Asset;
 
 class ServiceProviderTest extends TestCase
 {
@@ -18,7 +18,7 @@ class ServiceProviderTest extends TestCase
     {
         $app['config']->set('ai-assistant.model_directories', [[
             'path' => dirname(__DIR__, 2).'/tests/Fixtures/Models',
-            'namespace' => 'Vendor\\LaravelAiAssistant\\Tests\\Fixtures\\Models',
+            'namespace' => 'KyBDev\\LaraAiAssistant\\Tests\\Fixtures\\Models',
         ]]);
     }
 
