@@ -1,0 +1,65 @@
+{
+    "name": "kybDev/lara-ai-assistant",
+    "description": "A reusable Laravel AI Assistant package for model discovery, authorized data retrieval, and safe AI tool integration.",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.1.0",
+    "keywords": [
+        "laravel",
+        "ai",
+        "assistant",
+        "mcp",
+        "eloquent",
+        "retrieval"
+    ],
+    "authors": [
+        {
+            "name": "Package Author",
+            "email": "author@example.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/config": "^11.0|^12.0",
+        "illuminate/container": "^11.0|^12.0",
+        "illuminate/contracts": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13",
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vendor\\LaravelAiAssistant\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vendor\\LaravelAiAssistant\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vendor\\LaravelAiAssistant\\AiAssistantServiceProvider"
+            ],
+            "aliases": {
+                "AiAssistant": "Vendor\\LaravelAiAssistant\\Facades\\AiAssistant"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "phpunit",
+        "pint": "pint",
+        "check": [
+            "@test",
+            "@pint --test"
+        ]
+    }
+}
