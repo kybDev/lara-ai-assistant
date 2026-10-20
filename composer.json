@@ -1,5 +1,5 @@
 {
-    "name": "kybDev/lara-ai-assistant",
+    "name": "kybdev/lara-ai-assistant",
     "description": "A reusable Laravel AI Assistant package for model discovery, authorized data retrieval, and safe AI tool integration.",
     "type": "library",
     "license": "MIT",
