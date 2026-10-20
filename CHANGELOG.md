@@ -1,7 +1,10 @@
 # Changelog
 
-## Unreleased
+## 0.2.0
 
+- Add an authenticated chat page and CSRF-protected Ollama chat endpoint.
+- Add configurable Ollama model, URL, timeout, and route middleware settings.
+- Validate chat history and explicitly keep database retrieval out of scope.
 - Replace placeholder package namespaces with `KyBDev\LaraAiAssistant`.
 - Document Composer installation for published and local path-repository use.
 
